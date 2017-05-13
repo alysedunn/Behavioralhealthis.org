@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eNno Bootstrap Template</title>
+    <title>Behavioral Health Integrative Services, PC</title>
 
     <!-- Bootstrap -->
   <link href="static/css/bootstrap.min.css" rel="stylesheet">
@@ -16,12 +16,6 @@
 	<link rel="stylesheet" type="text/css" href="static/css/set1.css" />
 	<link href="static/css/overwrite.css" rel="stylesheet">
 	<link href="static/css/style.css" rel="stylesheet">
-    <!-- =======================================================
-        Theme Name: eNno
-        Theme URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
-        Author: BootstrapMade
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
   </head>
   <body>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -34,16 +28,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span>eNno</span></a>
+				<a class="navbar-brand" href="{{ url_for('homepage') }}">
+          <span>BHIS</span>
+        </a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<div class="menu">
 					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="index.html">Home</a></li>
-						<li role="presentation"><a href="services.html">Services</a></li>
-						<li role="presentation"><a href="blog.html">Blog</a></li>
-						<li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-						<li role="presentation"><a href="contact.html">Contact</a></li>
+						<li role="presentation" class="active"><a href="{{ url_for('homepage') }}">About Us</a></li>
+						<li role="presentation"><a href="{{ url_for('homepage') }}">Contact</a></li>
+						<li role="presentation"><a href="{{ url_for('homepage') }}">Questions</a></li>
+						<li role="presentation"><a href="{{ url_for('homepage') }}">Privacy</a></li>
+						<li role="presentation"><a href="{{ url_for('homepage') }}">Terms</a></li>
 					</ul>
 				</div>
 			</div>
@@ -69,10 +65,13 @@
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<div class="text-center">
-					<h2>Multi Purpose Theme</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu<br>
-					vestibulum volutpat libero sollicitudin vitae Curabitur ac aliquam <br>
-					lorem sit amet scelerisque justo</p>
+					<h2>Counseling and Psychotherapy</h2>
+					<p>As professional counselors and psychotherapists we offer a
+            supportive practice, gently listening to you, understanding things
+            from your perspective. When life gets difficult it can be so hard
+            to know just what to do. We believe that together, through the
+            counseling process, we will begin to make sense out of the
+            confusion.</p>
 				</div>
 				<hr>
 			</div>
@@ -82,11 +81,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="box">
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
-						<h4>Responsive</h4>
+						<h4>Individuals</h4>
 							<div class="icon">
-								<i class="fa fa-heart-o fa-3x"></i>
+								<i class="fa fa-location-arrow fa-3x"></i>
 							</div>
 						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero</p>
 						<div class="ficon">
@@ -95,22 +94,35 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
-					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.0s">
-						<h4>Multi Purpose</h4>
-						<div class="icon">
-							<i class="fa fa-desktop fa-3x"></i>
-						</div>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero</p>
-						<div class="ficon">
-							<a href="#" class="btn btn-default" role="button">Read more</a>
-						</div>
-					</div>
-				</div>
+        <div class="col-md-3">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.0s">
+            <h4>Couples Counseling</h4>
+            <div class="icon">
+              <i class="fa fa-location-arrow fa-3x"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero</p>
+            <div class="ficon">
+              <a href="#" class="btn btn-default" role="button">Read more</a>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-md-4">
-					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.6s">
-						<h4>Easy Customize</h4>
+        <div class="col-md-3">
+          <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.6s">
+            <h4>Family Mediation</h4>
+            <div class="icon">
+              <i class="fa fa-location-arrow fa-3x"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero</p>
+            <div class="ficon">
+              <a href="#" class="btn btn-default" role="button">Read more</a>
+            </div>
+          </div>
+        </div>
+
+				<div class="col-md-3">
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="2.2s">
+						<h4>Young People</h4>
 						<div class="icon">
 							<i class="fa fa-location-arrow fa-3x"></i>
 						</div>
@@ -128,11 +140,44 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-12 col-md-offset-0">
 				<div class="text-center">
-					<h2>Galleries</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu<br>
-					vestibulum volutpat libero sollicitudin vitae Curabitur ac aliquam <br>
+					<h2>Congratulations on taking the first step</h2>
+					<p>
+            Would you like to make your life more fulfilling, enjoyable,
+            healthy and productive? Would you like to reduce anxiety, stress
+            and depression? Is there anything you would like to change about
+            your life? We realize that the decision to seek counseling is not a
+            decision that is made lightly. Often times, it is easier to ignore
+            emotional and psychological difficulties in hopes that they will
+            improve on their own. Unfortunately, in many cases, brushing these
+            challenges under the rug doesn’t resolve the real issues.
+          </p>
+          <p>
+          Discussing your thoughts, feelings, emotions, and conflicts with
+          another person can be of great help. If that person is unbiased,
+          caring, professionally trained, and sensitive, then talking with that
+          person and exploring your difficulties and concerns can be
+          illuminating, and of tremendous assistance.
+          </p>
+          <p>
+          We are passionate about collaborating with you to discover what is
+          working and what is not working in your life. We subscribe to the
+          belief of creating a partnership with our clients.
+          </p>
+          <p>
+          Lastly, finding a therapist that is a good fit for you can be
+          difficult. Our goal at Behavioral Health Integrative Services is to
+          provide you with a comfortable, respectful and supportive environment
+          where you feel open to explore any issues that come up during
+          treatment. If, for whatever reason, we are not the right fit for you,
+          we will provide you with resources and encourage you to find the
+          place where you can begin your journey towards a more fulfilling life.
+          </p>
+          <p>
+          Make an appointment today and let’s discuss your goals.
+          </p>
+           <br>
 					</p>
 				</div>
 				<hr>
@@ -140,7 +185,7 @@
 		</div>
 	</div>
 
-	<div class="content">
+	<!-- <div class="content">
 		<div class="grid">
 			<figure class="effect-zoe">
 				<img src="static/img/25.jpg" alt="img25"/>
@@ -196,34 +241,40 @@
 				</figcaption>
 			</figure>
 		</div>
-	</div>
+	</div> -->
 
 	<footer>
 		<div class="inner-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 f-about">
-						<a href="index.html"><h1><span>e</span>Nno</h1></a>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero
-						vestibulum volutpat libero sollicitudin vitae Curabitur ac aliquam  consectetur adipiscing elit Cras suscipit arcu libero
-						</p>
+						<a href="index.html"><h1></span>Payment Forms Accepted</h1></a>
+              <li>BlueCros BlueShield</li>
+              <li>MagnaCare</li>
+              <li>Tricare</li>
+              <li>Visa, Mastercard, Discover, AmericanExpress</li>
+              <li>Cash, Check, Moneyorder</li>
 					</div>
 					<div class="col-md-4 l-posts">
-						<h3 class="widgetheading">Latest Posts</h3>
+						<!-- <h3 class="widgetheading">Latest Posts</h3>
 						<ul>
 							<li><a href="#">This is awesome post title</a></li>
 							<li><a href="#">Awesome features are awesome</a></li>
 							<li><a href="#">Create your own awesome website</a></li>
 							<li><a href="#">Wow, this is fourth post title</a></li>
-						</ul>
+						</ul> -->
 					</div>
 					<div class="col-md-4 f-contact">
 						<h3 class="widgetheading">Stay in touch</h3>
-						<a href="#"><p><i class="fa fa-envelope"></i> example@gmail.com</p></a>
-						<p><i class="fa fa-phone"></i>  +345 578 59 45 416</p>
-						<p><i class="fa fa-home"></i> Enno inc  |  PO Box 23456
-							Little Lonsdale St, New York <br>
-							Victoria 8011 USA</p>
+						<a href="#">
+              <p>
+                <i class="fa fa-envelope"></i>Martha@behavioralhealthis.org
+              </p>
+            </a>
+						<p><i class="fa fa-phone"></i>  +1 (718) 309-3090</p>
+						<p><i class="fa fa-home"></i> Behavioral Health Integrative Services, PC.
+							Address Line 1<br>
+							Adress Line 2</p>
 					</div>
 				</div>
 			</div>
@@ -234,16 +285,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="copyright">
-						&copy; eNno Theme. All Rights Reserved
-                        <div class="credits">
-                            <!--
-                                All the links in the footer should remain intact.
-                                You can delete the links only if you purchased the pro version.
-                                Licensing information: https://bootstrapmade.com/license/
-                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eNno
-                            -->
-                            <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                        </div>
+						&copy; Behavioral Health Integrative Services, PC. All Rights Reserved
 					</div>
 				</div>
 			</div>
@@ -253,9 +295,7 @@
 						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
 						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
 						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
-						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
-						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li>
-					</ul>
+		       </ul>
 				</div>
 			</div>
 
