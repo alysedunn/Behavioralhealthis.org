@@ -6,9 +6,9 @@ application = Flask(__name__)
 def homepage ():
     return render_template('index.html')
 
-@application.route('/layout')
-def layout ():
-    return render_template('layout.html')
+@application.route('/pricing', methods=['GET', 'POST'])
+def pricing ():
+    return render_template('pricing.html')
 
 if __name__ == "__main__":
     application.debug = False
