@@ -10,6 +10,10 @@ def homepage ():
 def pricing ():
     return render_template('pricing.html')
 
+@application.route('/forms', methods=['GET', 'POST'])
+def forms ():
+    return render_template('forms.html')
+
 if __name__ == "__main__":
     application.debug = False
     application.run()
