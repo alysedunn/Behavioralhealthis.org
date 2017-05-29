@@ -5964,7 +5964,7 @@ button.close {
 .carousel-control .icon-next:before {
   content: '\203a';
 }
-.carousel-indicators {
+ {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -5975,7 +5975,7 @@ button.close {
   text-align: center;
   list-style: none;
 }
-.carousel-indicators li {
+ li {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -5987,7 +5987,7 @@ button.close {
   border: 1px solid #fff;
   border-radius: 10px;
 }
-.carousel-indicators .active {
+ .active {
   width: 12px;
   height: 12px;
   margin: 0;
@@ -6031,7 +6031,7 @@ button.close {
     left: 20%;
     padding-bottom: 30px;
   }
-  .carousel-indicators {
+   {
     bottom: 20px;
   }
 }
